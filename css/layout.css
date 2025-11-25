@@ -12,4 +12,12 @@
   --width-readable: fit-content(60ch);
   --width-wide: fit-content(80ch);
   --width-constrained: fit-content(45ch);
+
+  --grid-min: 16rem;
+  --grid-max: 1fr;
+  --grid-gap: var(--space-lg);
+
+  --container-sm: 400px;
+  --container-md: 600px;
+  --container-lg: 900px;
 }

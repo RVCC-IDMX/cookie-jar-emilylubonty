@@ -155,9 +155,15 @@ body {
 
    ============================================ */
 .cookie-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   max-width: var(--max-card-width);
   min-width: var(--min-card-width);
-  padding: var(--space-md);
+  padding: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(var(--grid-min), var(--grid-max)));
+  gap: var(--grid-gap);
+  justify-content: center;
 }
 /* ============================================
    6. COOKIE CARD BASE STYLES
@@ -171,6 +177,15 @@ body {
    internal layout for horizontal arrangements.
 
    ============================================ */
+.cookie-card:has(img) {
+  padding: var(--space-md);
+}
+
+@container cookie-grid (min-width: var(--container-md)) {
+  .cookie-card {
+    padding: var(--space-lg);
+  }
+}
 
 .cookie-card {
   background-color: var(--color-cream);
