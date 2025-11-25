@@ -154,7 +154,11 @@ body {
    Grid layout is defined in layout.css.
 
    ============================================ */
-
+.cookie-grid {
+  max-width: var(--max-card-width);
+  min-width: var(--min-card-width);
+  padding: var(--space-md);
+}
 /* ============================================
    6. COOKIE CARD BASE STYLES
    ============================================

@@ -1,12 +1,15 @@
 :root {
   /* Spacing Variables */
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2rem;
-  --space-xl: 3rem;
+  --space-xs: clamp(0.5rem, 0.4rem + 0.25vw, 0.75rem);
+  --space-sm: clamp(1rem, 0.9rem + -.3125vw, 1.5rem);
+  --space-md: clamp(1.5rem, 1.25rem + 0.625vw, 2.5rem);
+  --space-lg: clamp(2rem, 1.5rem + 1.25vw, 4);
+  --space-xl: clamp(3rem, 2rem + 2.5vw, 6rem);
 
   /* Width Constraints */
-  --min-card-width: 16rem;
-  --max-card-width: 40rem;
+  --min-card-width: min-content;
+  --max-card-width: max-content;
+  --width-readable: fit-content(60ch);
+  --width-wide: fit-content(80ch);
+  --width-constrained: fit-content(45ch);
 }
