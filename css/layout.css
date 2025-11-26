@@ -41,6 +41,8 @@
    Structure for card when it contains an image 
    Flexbox layout for image and content side by side 
 
+   Alternatives I considered were CSS Grid or block layout, but I preferred the way 
+   flexbox handled alignment and spacing.
     ============================================ */
 .cookie-card:has(img) {
   padding: var(--space-md);
@@ -54,7 +56,7 @@
    ============================================ 
 
    This adjusts padding of the cookie grid based on viewport size 
-   
+
    ============================================ */
 @container cookie-grid (min-width: var(--container-md)) {
   .cookie-grid {

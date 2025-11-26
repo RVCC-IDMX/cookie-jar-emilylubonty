@@ -152,8 +152,6 @@ body {
 
    ============================================ */
 .cookie-grid {
-  display: block;
-  flex-direction: row;
   max-width: var(--max-card-width);
   min-width: var(--min-card-width);
   padding: var(--space-lg);
@@ -168,8 +166,6 @@ body {
    Container queries in layout.css can modify the
    internal layout for horizontal arrangements.
 
-
-
    ============================================ */
 
 
@@ -178,7 +174,6 @@ body {
   border-radius: var(--radius-card);
   padding: var(--space-lg);
   box-shadow: var(--shadow-soft);
-  display: flexbox;
   gap: var(--space-md);
 
   /* Margin adjusted to allow for more spacing between cards */
