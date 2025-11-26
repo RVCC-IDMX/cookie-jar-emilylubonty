@@ -31,7 +31,7 @@
 
 @container cookie-grid (min-width: var(--container-md)) {
   .cookie-grid {
-    padding: var(--space-lg);
+    padding: var(--container-lg);
 
   }
 }

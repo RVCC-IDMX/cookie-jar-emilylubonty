@@ -163,7 +163,6 @@ body {
   margin-inline: auto;
   grid-template-columns: repeat(auto-fit, minmax(var(--grid-min), var(--grid-max)));
   gap: var(--grid-gap);
-  justify-content: center;
 }
 /* ============================================
    6. COOKIE CARD BASE STYLES
@@ -189,7 +188,7 @@ body {
 
   /* Vertical spacing when cards stack in normal flow */
   /* Overridden by grid gap when grid layout is applied */
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-xl);
 }
 
 .cookie-card--hero {
