@@ -30,8 +30,14 @@
 }
 
 @container cookie-grid (min-width: var(--container-md)) {
-  .cookie-card {
+  .cookie-grid {
     padding: var(--space-lg);
 
+  }
+}
+
+@container cookie-card (min-width: var(--container-md)) {
+  .cookie-card {
+    container-type: inline-size;
   }
 }

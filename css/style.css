@@ -155,12 +155,12 @@ body {
 
    ============================================ */
 .cookie-grid {
-  display: flex;
+  display: block;
   flex-direction: row;
-  flex-wrap: wrap;
   max-width: var(--max-card-width);
   min-width: var(--min-card-width);
   padding: var(--space-lg);
+  margin-inline: auto;
   grid-template-columns: repeat(auto-fit, minmax(var(--grid-min), var(--grid-max)));
   gap: var(--grid-gap);
   justify-content: center;
