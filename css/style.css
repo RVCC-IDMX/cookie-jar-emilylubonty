@@ -177,22 +177,14 @@ body {
    internal layout for horizontal arrangements.
 
    ============================================ */
-.cookie-card:has(img) {
-  padding: var(--space-md);
-}
 
-@container cookie-grid (min-width: var(--container-md)) {
-  .cookie-card {
-    padding: var(--space-lg);
-  }
-}
 
 .cookie-card {
   background-color: var(--color-cream);
   border-radius: var(--radius-card);
   padding: var(--space-lg);
   box-shadow: var(--shadow-soft);
-  display: grid;
+  display: flexbox;
   gap: var(--space-md);
 
   /* Vertical spacing when cards stack in normal flow */

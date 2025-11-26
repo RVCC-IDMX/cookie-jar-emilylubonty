@@ -21,3 +21,17 @@
   --container-md: 600px;
   --container-lg: 900px;
 }
+
+.cookie-card:has(img) {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-md);
+}
+
+@container cookie-grid (min-width: var(--container-md)) {
+  .cookie-card {
+    padding: var(--space-lg);
+
+  }
+}
