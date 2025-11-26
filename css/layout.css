@@ -1,3 +1,13 @@
+/* ============================================
+   Overall Approach
+   ============================================
+
+   I used flex layout for cookie cards that contain images which allows
+   for side-by-side arrangements of image and content. I also added container
+   queries to adjust padding and layout based on viewport size.
+
+   ============================================ */
+
 :root {
   /* Spacing Variables */
   --space-xs: clamp(0.5rem, 0.4rem + 0.25vw, 0.75rem);
@@ -13,15 +23,25 @@
   --width-wide: fit-content(80ch);
   --width-constrained: fit-content(45ch);
 
+  /* Grid Layout for Cookie Grid Container */
   --grid-min: 16rem;
   --grid-max: 1fr;
   --grid-gap: var(--space-lg);
 
+  /* Container Sizes */
   --container-sm: 400px;
   --container-md: 600px;
   --container-lg: 900px;
 }
 
+/*  ===========================================
+    Cookie Card Layout Adjustments 
+    ============================================
+
+   Structure for card when it contains an image 
+   Flexbox layout for image and content side by side 
+
+    ============================================ */
 .cookie-card:has(img) {
   padding: var(--space-md);
   display: flex;
@@ -29,9 +49,16 @@
   gap: var(--space-md);
 }
 
+/* ============================================
+   Container Queries
+   ============================================ 
+
+   This adjusts padding of the cookie grid based on viewport size 
+   
+   ============================================ */
 @container cookie-grid (min-width: var(--container-md)) {
   .cookie-grid {
-    padding: var(--container-lg);
+    padding: var(--grid-gap);
 
   }
 }

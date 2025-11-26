@@ -148,9 +148,6 @@ body {
    5. THE COOKIE GRID CONTAINER
    ============================================
 
-   This container has no layout styles applied.
-   Cards stack vertically in normal document flow.
-
    Grid layout is defined in layout.css.
 
    ============================================ */
@@ -168,12 +165,10 @@ body {
    6. COOKIE CARD BASE STYLES
    ============================================
 
-   Cards use Grid internally for vertical stacking
-   of content sections. This layout works at any
-   card width.
-
    Container queries in layout.css can modify the
    internal layout for horizontal arrangements.
+
+
 
    ============================================ */
 
@@ -186,8 +181,7 @@ body {
   display: flexbox;
   gap: var(--space-md);
 
-  /* Vertical spacing when cards stack in normal flow */
-  /* Overridden by grid gap when grid layout is applied */
+  /* Margin adjusted to allow for more spacing between cards */
   margin-bottom: var(--space-xl);
 }
 
