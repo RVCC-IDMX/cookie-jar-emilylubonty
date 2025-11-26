@@ -145,21 +145,6 @@ body {
 }
 
 /* ============================================
-   5. THE COOKIE GRID CONTAINER
-   ============================================
-
-   Grid layout is defined in layout.css.
-
-   ============================================ */
-.cookie-grid {
-  max-width: var(--max-card-width);
-  min-width: var(--min-card-width);
-  padding: var(--space-lg);
-  margin-inline: auto;
-  grid-template-columns: repeat(auto-fit, minmax(var(--grid-min), var(--grid-max)));
-  gap: var(--grid-gap);
-}
-/* ============================================
    6. COOKIE CARD BASE STYLES
    ============================================
 
@@ -167,18 +152,6 @@ body {
    internal layout for horizontal arrangements.
 
    ============================================ */
-
-
-.cookie-card {
-  background-color: var(--color-cream);
-  border-radius: var(--radius-card);
-  padding: var(--space-lg);
-  box-shadow: var(--shadow-soft);
-  gap: var(--space-md);
-
-  /* Margin adjusted to allow for more spacing between cards */
-  margin-bottom: var(--space-xl);
-}
 
 .cookie-card--hero {
   padding: var(--space-xl);
